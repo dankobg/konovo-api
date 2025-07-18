@@ -1,0 +1,30 @@
+meta {
+  name: List Products
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/products?name=Samsung monitor 49&category_ids=12&price_lte=150000&price_gte=10000&sort=-price&page=1&page_size=50&brand_ids=364
+  body: none
+  auth: bearer
+}
+
+params:query {
+  name: Samsung monitor 49
+  category_ids: 12
+  price_lte: 150000
+  price_gte: 10000
+  sort: -price
+  page: 1
+  page_size: 50
+  brand_ids: 364
+  ~brand: Samsung
+  ~category: Monitori
+  ~price_lt: 
+  ~price_gt: 
+}
+
+auth:bearer {
+  token: {{token}}
+}
