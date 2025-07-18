@@ -2,6 +2,7 @@
 
 > Features:
 
+- OpenAPI support
 - Bearer token auth
 - List products
 - Get single product
