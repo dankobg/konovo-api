@@ -1,5 +1,5 @@
-from contextlib import asynccontextmanager
 import os
+from contextlib import asynccontextmanager
 
 import httpx
 import uvicorn
@@ -29,6 +29,7 @@ app = FastAPI(
     summary="konovo api task",
     description="konovo api full-stack example",
     version="1.0.0",
+    servers=[{"url": "http://localhost:8000", "description": "dev server"}],
 )
 
 
