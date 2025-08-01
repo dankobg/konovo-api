@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     lifespan=lifespan,
-    title="konovo api",
+    title="Konovo API",
     summary="konovo api task",
     description="konovo api full-stack example",
     version="1.0.0",
